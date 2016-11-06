@@ -1,0 +1,16 @@
+html
+  head
+    link(href='css/style.css', rel='stylesheet')
+body
+  h1="Tweets"
+  table
+    tr
+      th="Tweet"
+      th="Score"
+      th="Geo"
+    - for(i = 0; i < data.tweets.length; i++)
+      tr
+        td=data.tweets[i].text
+        td=data.tweets[i].score
+        td=data.tweets[i].geo
+

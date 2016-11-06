@@ -2,9 +2,11 @@
   "name": "sentiment_analysis",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.coffee",
+    "startd": "nodemon --debug server.coffee"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/hugogzz93/SentimentAnalysis/issues"
   },
-  "homepage": "https://github.com/hugogzz93/SentimentAnalysis#readme"
+  "homepage": "https://github.com/hugogzz93/SentimentAnalysis#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "sentiment": "^2.1.0",
+    "sentiment-spanish": "0.0.8"
+  },
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
 }
